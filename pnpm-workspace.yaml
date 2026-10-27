@@ -1,0 +1,12 @@
+packages:
+  - '.'
+
+allowBuilds:
+  esbuild: true
+
+onlyBuiltDependencies:
+  - esbuild
+
+# Keep MF aligned with host; block accidental resolution of brand-new releases.
+minimumReleaseAgeExclude:
+  - '@module-federation/vite'
